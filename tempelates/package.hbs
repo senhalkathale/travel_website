@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>packages</title>
+    <!-- fonts -->
+    <link rel="stylesheet" href="../font/fonts.css">
+    <!-- normalize css -->
+    <link rel="stylesheet" href="../css2/normalize.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css2/utility.css">
+    <link rel="stylesheet" href="../css2/style.css">
+    <link rel="stylesheet" href="../css2/responsive.css">
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav class="navbar">
+        <div class="container flex">
+            <a href="index.html" class="site-brand">
+                EssenceOf<span>MH</span>
+            </a>
+
+            <button type="button" id="navbar-show-btn" class="flex">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div id="navbar-collapse">
+                <button type="button" id="navbar-close-btn" class="flex">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="/index" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/gallery" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/blog" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/login" class="nav-link">Contact</a>
+                    </li>
+                    
+                </ul>
+             </div>
+        </div>
+    </nav>
+    <h1>Welcome </h1>
+    <h2>hello {{naming}}</h2>
+     <div class="header-form">
+                <h2>Choose your Travel location:</h2>
+                <form class="flex">
+                    <input type="text" class="form-control" placeholder="Destination name">
+                    <input type="date" class="form-control" placeholder="Date">
+                    <input type="number" class="form-control" placeholder="Price (₹)">
+                    <input type="submit" class="btn" value="Search">
+                </form>
+            </div>
+    
+</body>
+</html>
