@@ -1,0 +1,25 @@
+const mongoose=require("mongoose")
+
+mongoose.connect("mongodb://127.0.0.1:27017/LoginForm")
+.then(()=>{
+    console.log('mongoose connected');
+})
+//no e in video
+.catch((e)=>{
+    console.log('failed',e);
+})
+
+const logInSchema=new mongoose.Schema({
+    name:{
+        type:String,
+        required:true
+    },
+    password:{
+        type:String,
+        required:true
+    }
+})
+
+const LogInCollection=new mongoose.model('LogInCollection',logInSchema)
+
+module.exports=LogInCollection
